@@ -1,6 +1,6 @@
-# idd-a1-2020
 
 # Travel Article
+
 
 # Inspirations
 
@@ -15,7 +15,28 @@
 - https://dribbble.com/shots/5716758-Balloon-Rides-Website
 
 ## Infinitely loaded content
-- Load more
+
 
 ## One other component
-- Scrollbar progressbar
+- Scroll progressbar
+
+# Ideation
+### See images
+## Pros
+- Indicates position of user
+- Navigation always on screen
+- Consistent layout
+
+## Cons
+- 1 image on screen (solution: transition)
+- article
+
+# Steps
+
+1. Create all HTML content (no styling)
+2. Basic styling (CSS)
+3. Grid layouts (CSS)
+4. Responsiveness (CSS)
+5. ...
+
+
