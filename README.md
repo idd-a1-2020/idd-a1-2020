@@ -19,4 +19,3 @@
 
 ## One other component
 - Scrollbar progressbar
-
