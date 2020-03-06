@@ -1,6 +1,6 @@
 
 # Travel Article
-
+Article featuring information about a certain travel point, with separate sections.
 
 # Inspirations
 
