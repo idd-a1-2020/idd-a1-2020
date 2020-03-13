@@ -187,12 +187,9 @@ Text property - change to white (.scroll-spy a {color: var(--onblack);})
 
 @media screen and (min-width: 768px) {
     .carousel {
-        height: 100%;
+        width: 100%;
+        height: 30em;
         overflow: hidden;
-    }
-
-    .images-container {
-        max-height: 30em;
     }
 
     .article {
