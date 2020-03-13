@@ -192,6 +192,7 @@ Text property - change to white (.scroll-spy a {color: var(--onblack);})
         overflow: hidden;
     }
 
+
     .article {
         margin-left: 10em;
         margin-right: 10em;
