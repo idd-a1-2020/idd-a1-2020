@@ -26,12 +26,11 @@ body {
     font-family: var(--font-a);
     font-weight: bold;
     font-size: 2em;
-    margin-left: 1em;
     margin-bottom: 0.5em;
     margin-top: 0.5em;
 }
 
-.about, .places, .food, .entertain {
+.article {
     margin-left: 2em;
     margin-right: 2em;
     margin-bottom: 1em;
@@ -171,42 +170,32 @@ Text property - change to white (.scroll-spy a {color: var(--onblack);})
 
     .auto-resize {
         width: 100%;
-        height: 100%;
+        height: auto;
         vertical-align: middle;
-    }
+    } 
 
     .scroll-spy a{
         margin: 2em;
     }
 
-    .article-title{
-        margin-left: 2em;
-    }
-
-    .about, .places, .food, .entertain {
+    .article {
         margin-left: 4em;
         margin-right: 4em;
     }
 
-    
 }
 
 @media screen and (min-width: 768px) {
     .carousel {
-        width: 100%;
-        height: 30em;
+        height: 100%;
         overflow: hidden;
     }
 
-    .scroll-spy a{
-        margin: 4em;
+    .images-container {
+        max-height: 30em;
     }
 
-    .article-title{
-        margin-left: 5em;
-    }
-
-    .about, .places, .food, .entertain {
+    .article {
         margin-left: 10em;
         margin-right: 10em;
     }
@@ -234,7 +223,7 @@ Text property - change to white (.scroll-spy a {color: var(--onblack);})
 
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
     .topbar{
         z-index: 3;
     }
@@ -248,7 +237,7 @@ Text property - change to white (.scroll-spy a {color: var(--onblack);})
     }
 
     .images-container{
-        width: 35%;
+        width: 40%;
         height: 100%;
         position: fixed;
 	    top: 0;
@@ -263,21 +252,20 @@ Text property - change to white (.scroll-spy a {color: var(--onblack);})
         object-fit: cover;
     }
 
-    .article-title{
-        font-size: 5em;
-        margin-left: 1.15em;
-        margin-bottom: 0.5em;
+    .scroll-spy a{
+        margin: 4em;
     }
 
-    .about, .places, .food, .entertain {
-        margin-left: 6em;
-        margin-right: 6em;
+    .article-title{
+        font-size: 5em;
     }
 
     .article {
+        margin-left: 4em;
+        margin-right: 10em;
         margin-top: 5em;
         grid-area: artc;
-        margin-right: 8em;
+        display: block;
     }
 
     .scroll-spy {
@@ -293,28 +281,20 @@ Text property - change to white (.scroll-spy a {color: var(--onblack);})
 
     .full-grid{
         display: grid;
-        grid-template-columns: 35% auto;
+        grid-template-columns: 40% auto;
         grid-template-areas:
             "crsl artc"
         ;
     }
-
-    .footer {
-        margin-left: 30em;
-    }
 }
 
-@media screen and (min-width: 1600px) {
-    .full-grid{
-        grid-template-columns: 50% auto;
-        
-    }
+@media screen and (min-width: 1440px) {
 
-    .images-container{
-        width: 50%;
+    .article {
+        margin-right: 12em;
     }
 
     .footer {
-        margin-left: 50em;
+        text-align: center;
     }
 }
