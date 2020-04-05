@@ -23,6 +23,14 @@ body {
     overflow: hidden;
 }
 
+button {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    border: none;
+    
+}
+
 .article-title{
     font-family: var(--font-a);
     font-weight: bold;
@@ -113,29 +121,13 @@ body {
     vertical-align: middle;
 }
 
-/* for image carousel on tap and parallax effect */
 .carousel {
     width: 100%;
     height: 40em;
     overflow: hidden;
 }
-/* scroll spy */
 
-/* SCROLL SPY WHEN SCROLLED PAST ITS ORIGINAL POSITION
-
-.scroll-spy {
-    width: 100%;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    padding-bottom: 1em;
-    background: linear-gradient(0deg, rgba(0,0,0,0.6474964985994398) 0%, rgba(0,0,0,0) 100%);
-}
-
-Text property - change to white (.scroll-spy a {color: var(--onblack);})
-*/
-
-.scroll-spy a{
+.scroll-spy button{
     display: inline-block;
     width: 7em;
     color: var(--onwhite);
@@ -146,16 +138,14 @@ Text property - change to white (.scroll-spy a {color: var(--onblack);})
     font-size: 0.75em;
 }
 
+.scroll-spy p {
+    margin: 0 1em 1em;
+}
+
 .scroll-spy img {
     width: 3em;
     margin: 1em;
 }
-
-/* Will change based on scroll position and section in the viewport */
-.scroll-spy #about {
-    font-weight: bold;
-}
-
 
 /* RESPONSIVE */
 
@@ -167,7 +157,7 @@ Text property - change to white (.scroll-spy a {color: var(--onblack);})
         vertical-align: middle;
     } 
 
-    .scroll-spy a{
+    .scroll-spy button{
         margin: 2em;
     }
 
@@ -215,6 +205,14 @@ Text property - change to white (.scroll-spy a {color: var(--onblack);})
 }
 
 @media screen and (min-width: 1024px) {
+
+    .activeSpy {
+        background-color: var(--secondary);
+    }
+
+    .activeSpy p {
+        color: white;
+    }
 
     .topbar{
         z-index: 3;
@@ -273,7 +271,8 @@ Text property - change to white (.scroll-spy a {color: var(--onblack);})
         top: 5em;
     }
 
-    .scroll-spy a{
+    .scroll-spy button{
+        font-size: 0.75em;
         display: block;
     }
 

@@ -24,23 +24,23 @@
     <main>
         <div class="full-grid">
             <!-- carousel pictures section; berlin (article 1) -->
-            <section class="carousel">
+            <section class="carousel" id="carousel">
                 <div class="images-container">
                     <a href="#"><img src="img/berlin1.jpg" alt="pic 1" class="auto-resize"></a>
                     <a href="#"><img src="img/berlin2.jpg" alt="pic 1" class="auto-resize"></a>
                     <a href="#"><img src="img/berlin3.jpg" alt="pic 1" class="auto-resize"></a>
                     <a href="#"><img src="img/berlin4.jpg" alt="pic 1" class="auto-resize"></a>
-                    <a href="#"><img src="img/berlin5.jpg" alt="pic 1" class="auto-resize"></a>
+                    <a href="#" id="lastimage"><img src="img/berlin5.jpg" alt="pic 1" class="auto-resize"></a>
                 </div>
             </section>
 
             <!-- section for scrollspry/bar -> jump-scroll transition -->
             <section class="scroll-spy centerthis" id="scroll-spy">
                 <ul>
-                <a href="#about" id="aboutBtn"><img src="img/about.svg" alt="About">About</a>
-                <a href="#places" id="placesBtn"><img src="img/visit.svg" alt="Landmarks">Landmarks</a>
-                <a href="#food" id="foodBtn"><img src="img/food.svg" alt="Food">Food</a>
-                <a href="#entertain" id="entertainBtn"><img src="img/entertainment.svg" alt="Entertainment">Entertainment</a>
+                    <button id="aboutBtn"><img src="img/about.svg" alt="About"><p>About</p></button>
+                    <button id="placesBtn"><img src="img/visit.svg" alt="Landmarks"><p>Landmarks</p></button>
+                    <button id="foodBtn"><img src="img/food.svg" alt="Food"><p>Food</p></button>
+                    <button id="leisureBtn"><img src="img/entertainment.svg" alt="Leisure"><p>Leisure</p></button>
                 </ul>
             </section>
 
@@ -162,7 +162,7 @@
                     </ul>
                 </section>
                 
-                <section id="entertain" class="entertain">
+                <section id="leisure" class="leisure">
                 <h1 class="section-title">Entertainment</h1>
                 <ul class="sub-info">
                     <li>
