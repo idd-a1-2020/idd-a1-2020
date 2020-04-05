@@ -62,3 +62,8 @@ leisureButton.addEventListener('click', event => {
     placesButton.classList.remove(`activeSpy`)
     foodButton.classList.remove(`activeSpy`)
 })
+
+setInterval(() => {
+    document.getElementById("images-container").classList.add("images-container-animate");
+    document.getElementById("images-container").classList.remove("images-container");
+  }, 500);

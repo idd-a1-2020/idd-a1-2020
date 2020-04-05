@@ -222,17 +222,30 @@ button {
         position: relative;
         z-index: 1;
         grid-area: crsl;
-        overflow-y: scroll;
-        height: 100%;
-        overflow: -moz-scrollbars-none;
+        overflow-y: hidden;
+        min-height: 100%;
     }
 
     .carousel::-webkit-scrollbar { width: 0 !important }
 
     .images-container{
         width: 100%;
+        height: min-content;
         position: relative;
-	    top: 0;
+        top: 0;
+	    transition: transform 10000ms;
+	    display: flex;
+	    flex-direction: column;
+	    transform: translateY(-3200px);
+    }
+
+    .images-container-animate {
+        height: min-content;
+        transform: translateY(1000);
+        transition: transform 70000ms;
+        display: flex;
+        flex-direction: column;
+        transition-timing-function: linear;
     }
 
     .images-container a{
