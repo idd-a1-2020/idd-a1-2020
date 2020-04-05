@@ -20,6 +20,7 @@ html {
 body {
     background-color: var(--background);
     color: var(--onwhite);
+    overflow: hidden;
 }
 
 .article-title{
@@ -114,13 +115,10 @@ body {
 
 /* for image carousel on tap and parallax effect */
 .carousel {
-    
+    width: 100%;
+    height: 40em;
+    overflow: hidden;
 }
-
-.images-container {
-    
-}
-
 /* scroll spy */
 
 /* SCROLL SPY WHEN SCROLLED PAST ITS ORIGINAL POSITION
@@ -162,11 +160,6 @@ Text property - change to white (.scroll-spy a {color: var(--onblack);})
 /* RESPONSIVE */
 
 @media screen and (min-width: 600px) {
-    .carousel {
-        width: 100%;
-        height: 40em;
-        overflow: hidden;
-    }
 
     .auto-resize {
         width: 100%;
@@ -229,21 +222,19 @@ Text property - change to white (.scroll-spy a {color: var(--onblack);})
     .carousel {
         position: relative;
         z-index: 1;
-        width: 100%;
-        height: 100%;
         grid-area: crsl;
+        overflow-y: scroll;
+        height: 100%;
     }
 
     .images-container{
-        width: 40%;
-        height: 100%;
-        position: fixed;
+        width: 100%;
+        position: relative;
 	    top: 0;
     }
 
     .images-container a{
         display: block;
-        height: 100%;
     }
 
     .images-container img{
@@ -259,11 +250,13 @@ Text property - change to white (.scroll-spy a {color: var(--onblack);})
     }
 
     .article {
+        padding: 1em;
         margin-left: 4em;
         margin-right: 10em;
         margin-top: 5em;
         grid-area: artc;
         display: block;
+        overflow-y: scroll;
     }
 
     .scroll-spy {
@@ -283,6 +276,8 @@ Text property - change to white (.scroll-spy a {color: var(--onblack);})
         grid-template-areas:
             "crsl artc"
         ;
+        height: 100vh;
+        width: 100vw;
     }
 }
 
