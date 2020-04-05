@@ -215,6 +215,7 @@ Text property - change to white (.scroll-spy a {color: var(--onblack);})
 }
 
 @media screen and (min-width: 1024px) {
+
     .topbar{
         z-index: 3;
     }
@@ -225,7 +226,10 @@ Text property - change to white (.scroll-spy a {color: var(--onblack);})
         grid-area: crsl;
         overflow-y: scroll;
         height: 100%;
+        overflow: -moz-scrollbars-none;
     }
+
+    .carousel::-webkit-scrollbar { width: 0 !important }
 
     .images-container{
         width: 100%;
@@ -257,7 +261,10 @@ Text property - change to white (.scroll-spy a {color: var(--onblack);})
         grid-area: artc;
         display: block;
         overflow-y: scroll;
+        overflow: -moz-scrollbars-none;
     }
+
+    .article::-webkit-scrollbar { width: 0 !important }
 
     .scroll-spy {
         z-index: 2;
