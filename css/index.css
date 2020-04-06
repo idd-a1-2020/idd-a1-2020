@@ -15,16 +15,84 @@ html {
     --primary: #ffa45c;
     --secondary: #5d5d5a;
     --background: white;
+    --dbackground: rgb(32, 32, 32);
 
     /* FONTS */
     --font-a: 'alverata-informal', serif;
     --font-b: sans-serif;
+
 }
+
+
+.dark-mode {
+    background-color: var(--dbackground);
+    color: var(--onblack);
+}
+
+.switch-container {
+    display: flex;
+    align-items: center;
+}
+
+.theme-switch {
+    display: inline-block;
+    height: 2em;
+    position: relative;
+    width: 3.6em;
+    }
+
+.theme-switch input {
+    display:none;
+    }
+
+.slider {
+    background-color: var(--secondary);
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+    }
+
+.slider:before {
+    background-color: var(--onblack);
+    bottom: .25em;
+    content: "";
+    height: 1.5em;
+    left: .25em;
+    position: absolute;
+    transition: .5s;
+    width: 1.6em;
+    }
+
+input:checked + .slider {
+    background-color: #cccccc;
+    }
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+    }
+
+.slider.round {
+    border-radius: 3em;
+    }
+
+.slider.round:before {
+    border-radius: 50%;
+    }
+
+.right {
+    text-align: right;
+}
+
 
 body {
     background-color: var(--background);
     color: var(--onwhite);
 }
+
 
 .article-title{
     font-family: var(--font-a);

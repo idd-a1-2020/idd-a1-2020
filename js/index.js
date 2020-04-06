@@ -1,5 +1,10 @@
 let haveHitBottom = false
 
+function darkLightToggle(){
+    document.querySelector('body').classList.toggle('dark-mode');
+}
+document.getElementById('theme').addEventListener('click', event => darkLightToggle())
+
 let infiniteScroll = (event) => { 
   
   let winH = document.documentElement.clientHeight
@@ -124,3 +129,4 @@ let infiniteScroll = (event) => {
 window.addEventListener('load', infiniteScroll)
 window.addEventListener('scroll', infiniteScroll)
 window.addEventListener('resize', infiniteScroll)
+
