@@ -236,7 +236,7 @@ button {
 	    transition: transform 10000ms;
 	    display: flex;
 	    flex-direction: column;
-	    transform: translateY(-3200px);
+	    transform: translateY(-4000px);
     }
 
     .images-container-animate {
