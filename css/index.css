@@ -1,5 +1,9 @@
 @import url('https://use.typekit.net/voh7ihu.css');
 
+html, body, main {
+	height: 100%;
+}
+
 html {
     /* FONT COLOURS */
     --onwhite: black;
@@ -114,10 +118,6 @@ body {
 
 /* for image carousel on tap and parallax effect */
 .carousel {
-    
-}
-
-.images-container {
     
 }
 
