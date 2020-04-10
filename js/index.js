@@ -15,7 +15,7 @@ let infiniteScroll = (event) => {
 
   if (winY >= maxY) {
     document.querySelector('#content').innerHTML += `
-    <section>
+    <section class="fade">
     <article class="article-txt">
         <h1 class="article-title">Munich</h1>
         <section id="about" class="about">
