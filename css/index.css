@@ -118,7 +118,7 @@ body {
 }
 
 
-.fade-in {
+.fade {
     animation: fadeIn 1.5s;
 }
 
@@ -133,9 +133,6 @@ body {
 }
 
 /* for image carousel on tap and parallax effect */
-.carousel {
-    
-}
 
 /* scroll spy */
 
