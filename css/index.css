@@ -94,6 +94,13 @@ body {
     color: var(--onwhite);
 }
 
+button {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
 
 .article-title{
     font-family: var(--font-a);
@@ -205,23 +212,8 @@ body {
     height: 40em;
     overflow: hidden;
 }
-/* scroll spy */
 
-/* SCROLL SPY WHEN SCROLLED PAST ITS ORIGINAL POSITION
-
-.scroll-spy {
-    width: 100%;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    padding-bottom: 1em;
-    background: linear-gradient(0deg, rgba(0,0,0,0.6474964985994398) 0%, rgba(0,0,0,0) 100%);
-}
-
-Text property - change to white (.scroll-spy a {color: var(--onblack);})
-*/
-
-.scroll-spy a{
+.scroll-spy button{
     display: inline-block;
     width: 7em;
     color: var(--onwhite);
@@ -232,12 +224,14 @@ Text property - change to white (.scroll-spy a {color: var(--onblack);})
     font-size: 0.75em;
 }
 
+.scroll-spy p {
+    margin: 0 1em 1em;
+}
+
 .scroll-spy img {
     width: 3em;
     margin: 1em;
 }
-
-/* Will change based on scroll position and section in the viewport */
 
 
 /* RESPONSIVE */
@@ -250,7 +244,7 @@ Text property - change to white (.scroll-spy a {color: var(--onblack);})
         vertical-align: middle;
     } 
 
-    .scroll-spy a{
+    .scroll-spy button{
         margin: 2em;
     }
 
@@ -298,6 +292,16 @@ Text property - change to white (.scroll-spy a {color: var(--onblack);})
 }
 
 @media screen and (min-width: 1024px) {
+
+    .activeSpy {
+        background-color: var(--secondary);
+    }
+
+    .activeSpy p {
+        color: white;
+    }
+
+
     .topbar{
         z-index: 3;
     }
@@ -344,10 +348,6 @@ Text property - change to white (.scroll-spy a {color: var(--onblack);})
         object-fit: cover;
     }
 
-    .scroll-spy a{
-        margin: 4em;
-    }
-
     .article-title{
         font-size: 5em;
     }
@@ -367,9 +367,11 @@ Text property - change to white (.scroll-spy a {color: var(--onblack);})
         top: 5em;
     }
 
-    .scroll-spy a{
+    .scroll-spy button{
+        font-size: 0.75em;
         display: block;
     }
+
 
     .full-grid{
         display: grid;

@@ -37,10 +37,10 @@
         <!-- section for scrollspry/bar -> jump-scroll transition -->
         <section class="scroll-spy centerthis" id="scroll-spy">
             <ul>
-                <li><a href="#about" id="about"><img src="img/about.svg" alt="About">About</a></li>
-                <li><a href="#places"><img src="img/visit.svg" alt="Landmarks">Landmarks</a></li>
-                <li><a href="#food"><img src="img/food.svg" alt="Food">Food</a></li>
-                <li><a href="#entertain"><img src="img/entertainment.svg" alt="Entertainment">Entertainment</a></li>
+                <button id="aboutBtn"><img src="img/about.svg" alt="About"><p>About</p></button>
+                <button id="placesBtn"><img src="img/visit.svg" alt="Landmarks"><p>Landmarks</p></button>
+                <button id="foodBtn"><img src="img/food.svg" alt="Food"><p>Food</p></button>
+                <button id="leisureBtn"><img src="img/entertainment.svg" alt="Leisure"><p>Leisure</p></button>
             </ul>
         </section>
 
@@ -56,7 +56,7 @@
 
                 <h1 class="article-title">Berlin</h1>
 
-                <section id="about">
+                <section id="about" class="about">
                  <h1 class="section-title">About</h1>
                     <p class="section-paragraph">Berlin's combo of glamour and grit is bound to mesmerise all those keen to explore its vibrant culture, cutting-edge architecture, fabulous food, intense parties and tangible history.</p>
                     <ul class="sub-info">
@@ -79,7 +79,7 @@
                     </ul>
                 </section>
 
-                <section id="places">
+                <section id="places" class="places">
                     <h1 class="section-title">Landmarks</h1>
                     <p class="section-paragraph">Many of Berlin's must-see destinations are free to visit. Travellers can admire the Brandenburg Gate, visit the dome of the Reichstag, stroll the colourful East Side Gallery, and pay their respects at the Holocaust Memorial and the Berlin Wall Memorial, all for no cost.</p>
                         <ul class="sub-info">
@@ -102,7 +102,7 @@
                         </ul>
                 </section>
                
-                <section id="food">
+                <section id="food" class="food">
                 <h1 class="section-title">Food</h1>
                     <ul class="sub-info"> 
                         <li>
@@ -124,7 +124,7 @@
                     </ul>
                 </section>
                 
-                <section id="entertain">
+                <section id="leisure" class="leisure">
                 <h1 class="section-title">Entertainment</h1>
                 <ul class="sub-info">
                     <li>
@@ -159,34 +159,7 @@
         <!-- article #2 content -->
         <!-- FIXED SCROLLSPY DISAPPEARES AND REAPPEARES AGAIN ONCE SCROLLED OUT OF VIEW AGAIN -->
 
-        <div class="full-grid">
-                <!-- carousel pictures section; berlin (article 1) -->
-                <section class="carousel">
-                    <div class="images-container">
-                        <a href="#"><img src="img/berlin1.jpg" alt="pic 1" class="auto-resize"></a>
-        
-                <!--    CAROUSEL IMAGES
-        
-                        Triggered on tap
-                        Parallax effect - different scroll speed
-                
-                        <li><a href="#"><img src="img/berlin2.jpg"" alt="pic 2"></a></li>
-                        <li><a href="#"><img src="img/berlin3.jpg"" alt="pic 3"></a></li>
-                        <li><a href="#"><img src="img/berlin4.jpg"" alt="pic 4"></a></li>
-                        <li><a href="#"><img src="img/berlin5.jpg"" alt="pic 5"></a></li> -->
-                    </div>
-                </section>
-        
-                <!-- section for scrollspry/bar -> jump-scroll transition -->
-                <section class="scroll-spy centerthis" id="scroll-spy">
-                    <ul>
-                        <li><a href="#about" id="about"><img src="img/about.svg" alt="About">About</a></li>
-                        <li><a href="#places"><img src="img/visit.svg" alt="Landmarks">Landmarks</a></li>
-                        <li><a href="#food"><img src="img/food.svg" alt="Food">Food</a></li>
-                        <li><a href="#entertain"><img src="img/entertainment.svg" alt="Entertainment">Entertainment</a></li>
-                    </ul>
-                </section>
-                </div>
+       
     <footer class="footer">
         <h4>Copyright &copy; 2020</h4>
     </footer>
