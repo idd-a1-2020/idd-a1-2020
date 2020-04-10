@@ -130,3 +130,7 @@ window.addEventListener('load', infiniteScroll)
 window.addEventListener('scroll', infiniteScroll)
 window.addEventListener('resize', infiniteScroll)
 
+setInterval(() => {
+    document.getElementById("images-container").classList.add("images-container-animate");
+    document.getElementById("images-container").classList.remove("images-container");
+  }, 500);
